@@ -1279,13 +1279,6 @@ footer {
     }
 }
 
-nav a img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    display: block;
-}
-
 .nav-icon {
     width: 18px;
     height: 18px;
