@@ -1240,3 +1240,41 @@ footer {
     }
 
 }
+
+.programme-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    width: 100%;
+}
+
+.programme-image {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.programme-message h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.4rem;
+}
+
+.programme-message p {
+    margin: 0;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/* Handy */
+@media (max-width: 600px) {
+    .programme-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .programme-image {
+        width: 150px;
+    }
+}
