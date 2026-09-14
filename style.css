@@ -1285,3 +1285,10 @@ nav a img {
     object-fit: contain;
     display: block;
 }
+
+.nav-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
+}
