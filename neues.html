@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neues – Jugendarbeit Lutherkirche</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Logo Jugendarbeit" class="logo">
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="neues.html" class="active">Neues</a>
+                <a href="kalender.html">Kalender</a>
+                <a href="programme.html">Programme</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main class="page-container">
+
+        <section class="page-header glass-card">
+
+            <p class="small-title">AKTUELLES</p>
+
+            <h1>Was gibt's <span>Neues?</span></h1>
+
+            <p>
+                Hier findest du aktuelle Informationen, Neuigkeiten
+                und Rückblicke aus unserer Jugendarbeit.
+            </p>
+
+        </section>
+
+
+        <!-- News werden automatisch aus data.json geladen -->
+
+        <section class="news-grid" id="news-container">
+
+            <div class="loading glass-card">
+                Inhalte werden geladen ...
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <img src="logo.png" alt="Jugendarbeit Logo" class="footer-logo">
+
+            <p>Jugendarbeit Lutherkirche</p>
+
+            <p class="copyright">
+                © 2026 Jugendarbeit Lutherkirche
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
