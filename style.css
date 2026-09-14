@@ -1278,3 +1278,10 @@ footer {
         width: 150px;
     }
 }
+
+nav a img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+}
