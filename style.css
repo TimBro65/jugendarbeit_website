@@ -96,7 +96,7 @@ body {
 /* Logo */
 
 .logo {
-    width: 75px;
+    width: 95px;
     height: auto;
     display: block;
 
@@ -104,7 +104,7 @@ body {
 }
 
 .logo:hover {
-    transform: scale(2.05);
+    transform: scale(1.05);
 }
 
 
