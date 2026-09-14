@@ -1279,9 +1279,47 @@ footer {
     }
 }
 
-.nav-icon {
-    width: 18px;
-    height: 18px;
+/* Linke Navigation */
+
+.nav-left {
+    display: flex;
+    gap: 8px;
+}
+
+
+/* Navigation Items */
+
+.nav-item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 11px 15px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    text-decoration: none;
+
+    border-radius: 13px;
+
+    transition:
+        0.25s ease,
+        transform 0.25s ease;
+}
+
+.nav-item img {
+    width: 27px;
+    height: 27px;
+
     object-fit: contain;
-    display: block;
+
+    transition: 0.25s ease;
+}
+
+.nav-item span {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
