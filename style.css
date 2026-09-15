@@ -1309,7 +1309,7 @@ footer {
     height: 27px;
     object-fit: contain;
     transition: 0.25s ease;
-    transform: scale(2.0);
+    transform: scale(1.05);
 }
 
 .nav-item span {
