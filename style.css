@@ -96,7 +96,7 @@ body {
 /* Logo */
 
 .logo {
-    width: 115px;
+    width: 135px;
     height: auto;
     display: block;
 
@@ -1309,7 +1309,7 @@ footer {
     height: 27px;
     object-fit: contain;
     transition: 0.25s ease;
-    transform: scale(3.0);
+    transform: scale(2.0);
 }
 
 .nav-item span {
