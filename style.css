@@ -1325,259 +1325,121 @@ footer {
 
 
 
-/* =========================================================
-   GALERIE
-   ========================================================= */
+/* =========================================
+GALERIE
+========================================= */
 
 .gallery-section {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+display: flex;
 
-    margin-top: 35px;
+flex-direction: column;
+
+gap: 25px;
+
 }
-
-
-/* Galerie-Album */
 
 .gallery-album {
-    width: 100%;
-    padding: 28px;
+padding: 32px;
 
-    background: rgba(20, 24, 25, 0.58);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+animation: fadeIn 0.7s ease;
 
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 28px;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.25);
-
-    box-sizing: border-box;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        border-color 0.25s ease;
 }
-
-.gallery-album:hover {
-    transform: translateY(-3px);
-
-    background: rgba(25, 29, 30, 0.68);
-
-    border-color: rgba(255, 255, 255, 0.18);
-}
-
-
-/* Überschrift des Albums */
 
 .album-header {
-    margin-bottom: 22px;
+display: flex;
+
+align-items: flex-start;
+justify-content: space-between;
+
+margin-bottom: 28px;
+
 }
 
 .album-date {
-    margin: 0 0 7px 0;
+font-size: 12px;
 
-    font-size: 12px;
-    font-weight: 700;
+font-weight: 700;
 
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+letter-spacing: 1.8px;
 
-    color: rgba(255, 255, 255, 0.48);
+color:
+    rgba(255, 255, 255, 0.45);
+
+margin-bottom: 10px;
+
 }
 
 .album-header h2 {
-    margin: 0 0 9px 0;
+font-size: 28px;
 
-    font-size: 28px;
-    line-height: 1.15;
+margin-bottom: 10px;
 
-    font-weight: 700;
+letter-spacing: -0.5px;
 
-    color: #ffffff;
 }
 
-.album-header p:not(.album-date) {
-    margin: 0;
+.album-header p {
+max-width: 650px;
 
-    max-width: 650px;
+color:
+    rgba(255, 255, 255, 0.62);
 
-    font-size: 15px;
-    line-height: 1.6;
+font-size: 15px;
 
-    color: rgba(255, 255, 255, 0.68);
+line-height: 1.6;
+
 }
 
-
-/* =========================================================
-   GALERIE-BILDER
-   ========================================================= */
+/* Bilder */
 
 .gallery-grid {
-    display: grid;
+display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+grid-template-columns:
+    repeat(4, 1fr);
 
-    gap: 14px;
+gap: 12px;
+
 }
-
-
-/* Einzelnes Bild */
 
 .gallery-grid img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
+width: 100%;
 
-    object-fit: cover;
+height: 220px;
 
-    display: block;
+object-fit: cover;
 
-    border-radius: 18px;
+display: block;
 
-    border: 1px solid rgba(255, 255, 255, 0.10);
+border-radius: 16px;
 
-    background: rgba(255, 255, 255, 0.04);
+border:
+    1px solid rgba(255, 255, 255, 0.10);
 
-    transition:
-        transform 0.3s ease,
-        filter 0.3s ease,
-        border-color 0.3s ease;
-}
+background:
+    rgba(255, 255, 255, 0.05);
 
-.gallery-grid img:hover {
-    transform: scale(1.025);
+cursor: pointer;
 
-    filter: brightness(1.08);
-
-    border-color: rgba(255, 255, 255, 0.22);
-
-    cursor: pointer;
-}
-
-
-/* =========================================================
-   SEITENHEADER DER GALERIE
-   ========================================================= */
-
-.page-header {
-    padding: 42px 50px;
-
-    background: rgba(20, 24, 25, 0.58);
-
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 28px;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.22);
-}
-
-.page-header .small-title {
-    margin: 0 0 10px 0;
-
-    font-size: 12px;
-    font-weight: 700;
-
-    letter-spacing: 1.8px;
-
-    color: rgba(255, 255, 255, 0.45);
-}
-
-.page-header h1 {
-    margin: 0;
-
-    font-size: clamp(42px, 6vw, 70px);
-    line-height: 1.05;
-
-    font-weight: 800;
-
-    color: #ffffff;
-}
-
-.page-header h1 span {
-    color: rgba(255, 255, 255, 0.48);
-}
-
-.page-header > p:last-child {
-    margin: 18px 0 0 0;
-
-    max-width: 700px;
-
-    font-size: 16px;
-    line-height: 1.6;
-
-    color: rgba(255, 255, 255, 0.68);
-}
-
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-/* Tablet */
-
-@media (max-width: 900px) {
-
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gallery-album {
-        padding: 22px;
-    }
-
-    .page-header {
-        padding: 35px 30px;
-    }
+transition:
+    transform 0.3s ease,
+    filter 0.3s ease,
+    border-color 0.3s ease;
 
 }
 
+.gallery-grid img {
+transform: scale(1.025);
 
-/* Handy */
+filter: brightness(1.08);
 
-@media (max-width: 600px) {
+border-color:
+    rgba(255, 255, 255, 0.25);
 
-    .gallery-section {
-        gap: 20px;
-        margin-top: 25px;
-    }
+}
 
-    .gallery-album {
-        padding: 18px;
+/* Wenn ein Album nur 3 Bilder hat */
 
-        border-radius: 22px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 9px;
-    }
-
-    .gallery-grid img {
-        border-radius: 13px;
-    }
-
-    .album-header h2 {
-        font-size: 23px;
-    }
-
-    .album-header p:not(.album-date) {
-        font-size: 14px;
-    }
-
-    .page-header {
-        padding: 30px 22px;
-
-        border-radius: 22px;
-    }
-
-    .page-header h1 {
-        font-size: 42px;
-    }
-
+.gallery-grid img:last-child(3) {
+grid-column: span 1;
 }
