@@ -1443,3 +1443,380 @@ border-color:
 .gallery-grid img:last-child(3) {
 grid-column: span 1;
 }
+
+
+
+
+
+/* =====================================================
+   NEWS – NEUES
+===================================================== */
+
+
+/* =========================================
+   NEWS GRID
+========================================= */
+
+.news-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+/* =========================================
+   NEWS KÄSTCHEN
+========================================= */
+
+.news-card {
+
+    padding: 0;
+
+    min-height: 310px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.news-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    background:
+        rgba(30, 30, 40, 0.72);
+
+    border-color:
+        rgba(255, 255, 255, 0.22);
+
+}
+
+
+/* =========================================
+   NEWS BILD
+========================================= */
+
+.news-image {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+
+}
+
+
+/* Bild beim Hover leicht vergrößern */
+
+.news-card:hover .news-image {
+
+    transform:
+        scale(1.025);
+
+    filter:
+        brightness(1.08);
+
+}
+
+
+/* =========================================
+   DATUM + KATEGORIE
+========================================= */
+
+.news-top {
+
+    padding:
+        25px 30px 0;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+}
+
+
+/* =========================================
+   DATUM
+========================================= */
+
+.news-date-box {
+
+    width: 62px;
+
+    height: 62px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.13);
+
+}
+
+
+/* Tag */
+
+.news-date-box strong {
+
+    font-size: 22px;
+
+    line-height: 1;
+
+}
+
+
+/* Monat */
+
+.news-date-box span {
+
+    margin-top: 5px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color:
+        rgba(255, 255, 255, 0.50);
+
+}
+
+
+/* =========================================
+   KATEGORIE
+========================================= */
+
+.news-category {
+
+    padding:
+        8px 12px;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255, 255, 255, 0.07);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+
+    color:
+        rgba(255, 255, 255, 0.55);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* =========================================
+   NEWS INHALT
+========================================= */
+
+.news-content {
+
+    padding:
+        0 30px;
+
+    flex: 1;
+
+}
+
+
+/* Überschrift */
+
+.news-content h2 {
+
+    font-size: 25px;
+
+    line-height: 1.2;
+
+    margin-top: 20px;
+
+    margin-bottom: 14px;
+
+    letter-spacing: -0.5px;
+
+}
+
+
+/* Beschreibung */
+
+.news-content p {
+
+    color:
+        rgba(255, 255, 255, 0.65);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   NEWS BUTTON
+========================================= */
+
+.news-button {
+
+    align-self: flex-start;
+
+    margin:
+        25px 30px 30px;
+
+    padding:
+        11px 16px;
+
+    border-radius: 11px;
+
+    color: white;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+/* Button Hover */
+
+.news-button:hover {
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    transform:
+        translateX(3px);
+
+}
+
+
+/* =====================================================
+   NEWS RESPONSIVE
+===================================================== */
+
+
+/* Tablet */
+
+@media (max-width: 850px) {
+
+    .news-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+/* Handy */
+
+@media (max-width: 600px) {
+
+
+    .news-card {
+
+        min-height: 290px;
+
+    }
+
+
+    .news-image {
+
+        height: 190px;
+
+    }
+
+
+    .news-top {
+
+        padding:
+            22px 25px 0;
+
+    }
+
+
+    .news-content {
+
+        padding:
+            0 25px;
+
+    }
+
+
+    .news-content h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .news-button {
+
+        margin:
+            22px 25px 25px;
+
+    }
+
+
+}
