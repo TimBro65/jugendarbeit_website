@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +14,27 @@
 
     <div class="background"></div>
 
-    <!-- Navigation -->
     <header class="navbar">
 
         <div class="nav-container">
 
             <a href="index.html" class="logo-link">
-                <img src="logo.png" alt="Logo Jugendarbeit" class="logo">
+                <img
+                    src="logo.png"
+                    alt="Logo Jugendarbeit"
+                    class="logo"
+                >
             </a>
 
             <nav class="nav-menu">
+
                 <a href="index.html">Startseite</a>
                 <a href="neues.html" class="active">Neues</a>
                 <a href="kalender.html">Kalender</a>
                 <a href="programme.html">Programme</a>
                 <a href="galerie.html">Galerie</a>
                 <a href="kontakt.html">Kontakt</a>
+
             </nav>
 
         </div>
@@ -40,9 +46,13 @@
 
         <section class="page-header glass-card">
 
-            <p class="small-title">AKTUELLES</p>
+            <p class="small-title">
+                AKTUELLES
+            </p>
 
-            <h1>Was gibt's <span>Neues?</span></h1>
+            <h1>
+                Was gibt's <span>Neues?</span>
+            </h1>
 
             <p>
                 Hier findest du aktuelle Informationen, Neuigkeiten
@@ -52,13 +62,145 @@
         </section>
 
 
-        <!-- News werden automatisch aus data.json geladen -->
-
         <section class="news-grid" id="news-container">
 
-            <div class="loading glass-card">
-                Unser Instagram-Account, der seit Anfang 2026 besteht, zeigt die neusten Aktionen und Neuigkeiten😊
-            </div>
+
+            <article class="news-card glass-card">
+
+                <img
+                    src="news-instagram.jpg"
+                    alt="Neuigkeiten der Jugendarbeit auf Instagram"
+                    class="news-image"
+                >
+
+                <div class="news-top">
+
+                    <div class="news-date-box">
+                        <strong>23</strong>
+                        <span>SEP</span>
+                    </div>
+
+                    <div class="news-category">
+                        AKTUELL
+                    </div>
+
+                </div>
+
+                <div class="news-content">
+
+                    <h2>
+                        Unsere Neuigkeiten auf Instagram
+                    </h2>
+
+                    <p>
+                        Unser Instagram-Account, der seit Anfang 2026
+                        besteht, zeigt die neuesten Aktionen,
+                        Veranstaltungen und Neuigkeiten aus unserer
+                        Jugendarbeit. 😊
+                    </p>
+
+                </div>
+
+                <a
+                    href="https://www.instagram.com/jugendarbeit.luki/"
+                    target="_blank"
+                    class="news-button"
+                >
+                    Instagram ansehen →
+                </a>
+
+            </article>
+
+
+            <article class="news-card glass-card">
+
+                <img
+                    src="news-jugendtreff.jpg"
+                    alt="Jugendtreff der Lutherkirche"
+                    class="news-image"
+                >
+
+                <div class="news-top">
+
+                    <div class="news-date-box">
+                        <strong>00</strong>
+                        <span>MON</span>
+                    </div>
+
+                    <div class="news-category">
+                        NEU
+                    </div>
+
+                </div>
+
+                <div class="news-content">
+
+                    <h2>
+                        Titel der Neuigkeit
+                    </h2>
+
+                    <p>
+                        Hier kannst du über eine aktuelle Aktion,
+                        einen Jugendtreff, eine Veranstaltung oder
+                        einen Rückblick informieren.
+                    </p>
+
+                </div>
+
+                <a
+                    href="#"
+                    class="news-button"
+                >
+                    Mehr erfahren →
+                </a>
+
+            </article>
+
+
+            <article class="news-card glass-card">
+
+                <img
+                    src="news-beispiel.jpg"
+                    alt="Neuigkeit aus der Jugendarbeit"
+                    class="news-image"
+                >
+
+                <div class="news-top">
+
+                    <div class="news-date-box">
+                        <strong>00</strong>
+                        <span>MON</span>
+                    </div>
+
+                    <div class="news-category">
+                        RÜCKBLICK
+                    </div>
+
+                </div>
+
+                <div class="news-content">
+
+                    <h2>
+                        Titel deiner Neuigkeit
+                    </h2>
+
+                    <p>
+                        Hier steht dein eigener Text.
+                        Du kannst diesen Bereich beliebig
+                        anpassen und über deine Aktion berichten.
+                    </p>
+
+                </div>
+
+                <a
+                    href="#"
+                    class="news-button"
+                >
+                    Mehr erfahren →
+                </a>
+
+            </article>
+
 
         </section>
 
@@ -69,9 +211,15 @@
 
         <div class="footer-content">
 
-            <img src="logo.png" alt="Jugendarbeit Logo" class="footer-logo">
+            <img
+                src="logo.png"
+                alt="Jugendarbeit Logo"
+                class="footer-logo"
+            >
 
-            <p>Jugendarbeit Lutherkirche</p>
+            <p>
+                Jugendarbeit Lutherkirche
+            </p>
 
             <p class="copyright">
                 © 2026 Jugendarbeit Lutherkirche
@@ -85,4 +233,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
